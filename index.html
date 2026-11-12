@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio</title>
-    <meta name = "author" content="Malik BASSAIEV">
-    <meta name ="description" content ="Portfolio - Home">
+    <title>Home - Portfolio - Malik BASSAIEV</title>
+    <meta name="author" content="Malik BASSAIEV">
+    <meta name="description" content="Portfolio - Home">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <link rel="icon" type="image/x-icon" href="cat.ico">
+    <link rel="icon" type="image/x-icon" href="cat.ico">
     <link rel="stylesheet" href="style.css"> 
 </head>
 
-
 <body>
-
-        <!-- ================= HEADER / NAVBAR ================= -->
 
     <header>
         <nav class="navbar">
@@ -26,7 +23,7 @@
                 <li><a href="#experiences">Expériences</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#divers">Divers</a></li>
-                <li><a href="#cv">C.V</a></li>
+                <li><a href="#cv">C.V.</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -38,8 +35,6 @@
         <h2><i class="fas fa-code"></i> Etudiant de 1ère année BUT Réseaux et Télécommunications</h2>
     </div>
 
-            
-
     <main>
         <div class="separator-bar"></div>
 
@@ -49,414 +44,475 @@
             Etudiant de 1ère année de BUT Réseaux et Télécommunications.</p>
             <p>J'ai 19 ans, je viens de Clermont-Ferrand dans le Puy-de-Dôme (63).</p> <br>
 
-            <p>J'étudie à l'IUT d'Aubière et y apprend les bases des réseaux et des télécommunications au cours de cette première année via des travaux dirigés (TD) et des travaux pratiques (TP) afin d'acquérir les bases nécessaires afin de pouvoir les appliquer. <br>
-                Patient, autonome, curieux et capable de m'adapter, je souhaite poursuivre mes études en alternance à partir de Septembre 2026 au rythme d'1 mois en formation et 1 mois en apprentissage dans le but d'acquérir une première expérience dans le milieu professionnel tout en élargissant mes connaissances.</p>
-
+            <p>J'étudie à l'IUT d'Aubière et y apprend les bases des réseaux et des télécommunications au cours de cette première année via des travaux dirigés (TD) et des travaux pratiques (TP) afin d'acquérir les bases nécessaires et pouvoir les appliquer. <br>
+            Patient, autonome, curieux et capable de m'adapter, je recherche un stage de 3 mois, d'avril 2027 à Juin 2027 dans le but d'acquérir une première expérience dans le milieu professionnel tout en élargissant mes connaissances.</p>
         </section>
 
         <section id="formation" class="section-content">
             <h1 class="section-title-text"><i class="fas fa-graduation-cap"></i> FORMATION</h1>
             <div class="formations-list">
+                <button class="formation-card" onclick="openPanel('uca')">
+                    <div class="left">
+                        <img src="img/logo.uca.png" alt="UCA">
+                        <div>
+                            <h3>IUT Clermont Auvergne</h3>
+                            <span>BUT Réseaux et Télécommunications - Présent </span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
 
-    <!-- BOUTONS -->
-<div class="formations-list">
-    <button class="formation-card" onclick="openPanel('uca')">
-        <div class="left">
-            <img src="img/logo.uca.png" alt="UCA">
-            <div>
-                <h3>IUT Clermont Auvergne</h3>
-                <span>BUT Réseaux et Télécommunications</span>
+                <button class="formation-card" onclick="openPanel('lafayette')">
+                    <div class="left">
+                        <img src="img/logo.lafayette.png" alt="Lycée">
+                        <div>
+                            <h3>Lycée Polyvalent La Fayette</h3>
+                            <span>STI2D – SIN • 2021 - 2025</span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
             </div>
-        </div>
-        <span class="arrow">→</span>
-    </button>
 
-    <button class="formation-card" onclick="openPanel('lafayette')">
-        <div class="left">
-            <img src="img/logo.lafayette.png" alt="Lycée">
-            <div>
-                <h3>Lycée Polyvalent La Fayette</h3>
-                <span>STI2D – SIN • 2021 - 2025</span>
+            <div id="formationPanel">
+                <div class="panel-header">
+                    <h2 id="panel-title">Détails de la formation</h2>
+                    <button onclick="closePanel()">×</button>
+                </div>
+                <div id="panel-content"></div>
             </div>
-        </div>
-        <span class="arrow">→</span>
-    </button>
-</div>
-
-<!-- PANNEAU LATÉRAL -->
-<div id="formationPanel">
-    <div class="panel-header">
-        <h2 id="panel-title">Détails de la formation</h2>
-        <button onclick="closePanel()">×</button>
-    </div>
-    <div id="panel-content"></div>
-</div>
-
-
-<div id="panelOverlay" class="overlay" onclick="closeDetails()"></div>
-
-
-
-            </div>
+            <div id="panelOverlay" class="overlay" onclick="closePanel()"></div>
         </section>
 
-        <!-- ================= COMPÉTENCES ================= -->
-
-        
         <section id="competences" class="section-content skills-dark-section">
-            <h1 class="section-title-text skills-title"><i class="fas fa-tools"></i> COMPÉTENCES <i class="fas fa-wrench"></i></h1>
+            <h1 class="section-title-text skills-title"><i class="fas fa-tools"></i> COMPÉTENCES</h1>
             
-            <div class="skills-tabs">
-                <button class="tab-button active" onclick="showSkills('humaines')">Humaines</button>
-                <button class="tab-button" onclick="showSkills('techniques')">Techniques</button>
+            <div class="skills-main-toggle">
+                <button class="toggle-btn active" onclick="switchMainTab(event, 'techniques')">Techniques</button>
+                <button class="toggle-btn" onclick="switchMainTab(event, 'humaines')">Humaines</button>
             </div>
 
-            <div id="humaines" class="skills-cards-container tab-content active">
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Curiosité</h3>
-                    <p>J'ai le grand désir d'apprendre et de pousser au delà sur les sujets qui m'intéressent tout en me posant des questions.</p>
+            <div class="skills-container-layout">
+                <div class="skills-sidebar" id="sidebar-techniques">
+                    <button class="side-btn active" onclick="showSubCategory('res')">Réseaux</button>
+                    <button class="side-btn" onclick="showSubCategory('prog')">Programmation</button>
+                    <button class="side-btn" onclick="showSubCategory('telecom')">Télécommunications</button>
+                    <button class="side-btn" onclick="showSubCategory('tel')">Téléphonie</button>
+                    <button class="side-btn" onclick="showSubCategory('langues')">Langues</button>
                 </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Patience</h3>
-                    <p>Je garde mon calme de peu importe la situation et prend le temps d'analyser avant d'agir.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Adaptabilité</h3>
-                    <p>Je m'adapte facilement à différentes situations et suis capable d'apprendre de nouvelles compétences.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Autonomie</h3>
-                    <p>Je suis capable de prendre des initiatives et de me débrouiller seul avec les ressources disponibles.</p>
-                </div>
-            </div>
 
-            <!-- ================= Compétences techniques ================= -->
+                <div class="skills-content-display">
+                    
+                    <div id="res" class="sub-cat-content active" style="display:block;">
+                        <h3>Réseaux</h3>
+                        <div class="accordion">
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Modélisation & Analyse <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de modéliser un ou plusieurs réseaux sur <strong>Cisco Packet Tracer</strong>. J'utilise également des outils comme <strong>Nmap</strong> pour l'analyse de ports et la découverte de services sur un réseau local.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Virtualisation <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de créer des machines virtuelles et de configurer des réseaux virtuels à l'aide d'outils comme <strong>VMware</strong>, <strong>VirtualBox</strong> et <strong>Docker</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Installation d'équipement réseau <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable d'installer et de configurer des équipements réseau tels que des routeurs, des commutateurs et des points d'accès. J'ai de l'expérience avec des marques comme <strong>Cisco</strong> et <strong>TP-Link</strong>.</p>
+                                </div>
+                            </div>
 
-            <div id="techniques" class="skills-cards-container tab-content">
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Programmation</h3>
-                    <p>Niveau de base sur les langages tels que : Python, HTML, CSS, bash (linux), C++(Arduino), je suis capable de lire et de rédiger avec des langages afin de créer un programme simple demandé.</p>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)"> Active Directory <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p> Je suis capable d'utiliser <strong>Active Directory</strong> sur Windows afin de créer et gérer des groupes d'utilisateurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div id="prog" class="sub-cat-content" style="display:none;">
+                        <h3>Programmation</h3>
+                        <div class="accordion">
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Langages & Outils <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Niveau de base sur <strong>Python</strong> (Numpy, Pandas), je suis capable de lire et de rédiger des scripts pour créer des programmes simples.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">HTML & CSS <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de créer des pages web simples en utilisant <strong>HTML</strong> et <strong>CSS</strong>. Je comprends les concepts de base du design web.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Base de données et SQL <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de créer des bases de données simples et d'écrire des requêtes SQL pour interroger et manipuler les données. Je comprends les concepts de base des bases de données relationnelles.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Bash/Shell <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de créer des scripts Bash pour automatiser des tâches sur des systèmes Linux. Je comprends les concepts de base de la ligne de commande et des scripts shell.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Javascript <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable d'intégrer <strong>Javascript</strong> dans mes sites web. Je comprends les concepts de base du design web intéractif.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">C++ <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de créer des programmes simples en utilisant <strong>C++</strong>. Je comprends les concepts de base de la programmation orientée objet tel que Arduino et ESP32.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">PHP <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de créer des programmes simples en utilisant <strong>PHP</strong>. Je comprends les concepts de base de la programmation et communication entre client et serveur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div id="telecom" class="sub-cat-content" style="display:none;">
+                        <h3>Télécommunications</h3>
+                        <div class="accordion">
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Supports de transmission <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Découverte du fonctionnement de la <strong>T.N.T</strong> et de la <strong>Fibre optique</strong>. Utilisation d'un <strong>réflectomètre</strong> et d'un <strong>photomètre</strong> pour tester les liaisons optiques.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">GBF & Oscilloscope <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable d'utiliser un <strong>GBF</strong> (Générateur de Basse Fréquence) et un <strong>oscilloscope</strong> pour analyser des signaux électroniques. Je comprends les concepts de base de l'électronique analogique.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Fibre Optique <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable d'utiliser un <strong>réflectomètre</strong> et un <strong>photomètre</strong> pour tester les liaisons optiques. Je comprends les concepts de base de la transmission de données par fibre optique.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Analyseur de Spectres<i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable d'utiliser un <strong>Analyseur de Spectres</strong> pour analyser des signaux électroniques. Je comprends les concepts de base de l'électronique analogique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div id="tel" class="sub-cat-content" style="display:none;">
+                        <h3>Téléphonie</h3>
+                        <div class="accordion">
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Call Server & VoIP <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Découverte de la téléphonie analogique, numérique et de la <strong>VoIP</strong>. Configuration d'un <strong>IPBX</strong> pour assurer la communication interne et établir des liaisons externes. Je sais configurer téléphone numérique, analogique, DECT et Softphone pour assurer une commnication interne et vers l'extérieur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="langues" class="sub-cat-content" style="display:none;">
+                        <h3 style="margin-bottom: 20px; color: #4a7c6d;">Compétences Linguistiques</h3>
+                        <div class="skills-cards-grid">
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
+                                <h3>Anglais</h3>
+                                <p>Niveau B1+. Je peux aisément lire et parler/écrire en anglais afin de tenir une conversation avec un interlocuteur anglophone.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-language"></i></div>
+                                <h3>Allemand</h3>
+                                <p>Niveau B. Je suis capable de comprendre et de communiquer dans des situations simples en allemand.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div id="humaines-content" class="sub-cat-content" style="display:none;">
+                        <h3 style="margin-bottom: 20px; color: #4a7c6d;">Compétences Humaines</h3>
+                        <div class="skills-cards-grid">
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-search"></i></div>
+                                <h3>Curiosité</h3>
+                                <p>J'ai le grand désir d'apprendre et de pousser au delà sur les sujets qui m'intéressent tout en me posant des questions.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-hourglass-half"></i></div>
+                                <h3>Patience</h3>
+                                <p>Je garde mon calme de peu importe la situation et prend le temps d'analyser avant d'agir.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+                                <h3>Adaptabilité</h3>
+                                <p>Je m'adapte facilement à différentes situations et suis capable d'apprendre de nouvelles compétences.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-user-check"></i></div>
+                                <h3>Autonomie</h3>
+                                <p>Je suis capable de prendre des initiatives et de me débrouiller seul avec les ressources disponibles.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Télécommunications</h3>
-                    <p>Grâce à une multitude de travaux pratiques, j'ai découvert le fonctionnement de plusieurs façons de communiquer et d'échanger des données. Tel que la TNT (Télévision Numérique Terrestre), la fibre optique grâce à l'utilisation d'un réflectomètre et d'un photomètre.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Electronique</h3>
-                    <p>Lors de mes années en STI2D SIN et en poursuite en BUT, j'ai pu pratiquer l'électronique via des projets divers, j'ai appris à utiliser des outils tels que l'oscilloscope et le GBF mais aussi à utiliser des microcontrôleurs (Arduino, ESP32, Raspberry Pi) afin de créer des circuits et réaliser des projets.</p>
-                </div>
-                 <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Réseaux</h3>
-                    <p>Je suis capable de modéliser un ou plusieurs réseau sur Cisco Packet Tracer, d'en analyser un grâce à  des outils tels que Nmap</p>
-                </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Anglais</h3>
-                    <p>Niveau B1+.
-                    Je peux aisément lire et parler/écrire en anglais afin de tenir une conversation avec un interlocuteur anglophone.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="card-icon"></div>
-                    <h3>Allemand</h3>
-                    <p>Niveau B.
-                    Je suis capable de comprendre et de communiquer dans des situations simples en allemand.</p>
-                </div>
-            </div>
+            </div> 
         </section>
 
-        <!-- ================= EXPÉRIENCES ================= -->
-
-         <section id="experiences" class="section-content">
+        <section id="experiences" class="section-content">
             <h1 class="section-title-text"><i class="fas fa-briefcase"></i> EXPÉRIENCES</h1>
-            <div class="card-container">
-                <div class="card experience-item">
-                    <h3>Travaux de construction d'une maison.</h3>
-                    <p>Période : 2023 - Présent</p>
-                    <p>Objectif : Réaliser la construction et l'isolation des différentes salles d'une maison.</p><br>
-                    <p>Situation : Je voyage en majorité les étés dans mon pays d'origine, là où j'aide ma famille à bâtir notre maison, principalement en réalisant des travaux d'isolation et de bâtissage de structures. Le temps passé par semaine est d'environ 4 à 5h par jour toute la semaine de Début/Mi-Juillet à fin Août.</p> <br>
-                    <p>Travaux réalisés : Au fil des années, j'ai participé à plusieurs tâches telles que l'isolement des murs et de plafond avec de la laine de verre et installation de placo, le transport d'objets, de matériaux et d'outils à longueur de journée d'un point A à un point B. Il s'agit de travaux physique et manuels que je réalise avec mon père même si il arrive que ce soit avec d'autres personnes qui sont bien plus expérimentées que moi.</p>
-                    <div class="box">
-                        <img src="img/isola.png" class="thumb" onclick="openLightbox(this.src)" alt="Schéma d'isolation d'un mur">
+            
+            <div class="projects-grid">
+                <div class="project-card" onclick="openProjectModal('modal-construction')">
+                    <div class="card-image-wrapper">
+                        <img src="img/isola.png" alt="Isolation" class="card-project-img">
+                        <div class="card-icon-overlay"><i class="fas fa-home"></i></div>
                     </div>
-
-                    <!-- ⚠️ EN DEHORS de la box -->
-                    <div id="lightbox" onclick="closeLightbox()">
-                        <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Agrandissement de l'image">
+                    <div class="card-project-body">
+                        <h3>Travaux de construction d'une maison</h3>
+                        <p>Réalisation de l'isolation et du bâtissage de structures. Période : 2023 - Présent.</p>
+                        <div class="card-tags"><span class="tag">Bâtiment</span><span class="tag">Travail d'équipe</span></div>
                     </div>
-                    <P>Voici une représentation de l'isolement en question, nous y retrouvons une ossature qui dans notre cas était en bois, servant à retenir le matériau isolant qui est la laine de verre, et qui s'installe entre le mur et la plaque de plâtre qui est placée par desssus, comme le montre le schéma.</P>
-                    <br>
-                    <p>Quels sont les résultats ? J'ai appris au fil du temps à suivre des instructions plus ou moins complexes, à prendre l'initiative sur certaines tâches afin que les travaux soient réalisés efficacement, mais ceci m'a surtout donné l'occasion d'assister, d'observer et d'apprendre à travailler en équipe, à être délicat et patient avec des matériaux fragiles.</p>
-	
                 </div>
 
-                <div class="card experience-item">
-                    <h3>Rénovation d'appartement</h3>
-                    <p>Période : Juillet 2024 - Août 2024</p>
-                    <p>Objectif : Préparer un appartement pour un aménagement.</p> <br>
-                    <p>Situation : Durant l'été 2024, lors d'un déménagement, j'ai dû assister ma famille dans la rénovation d'un appartement, passant environ 6h par jour (de midi à 17/18h) toute la semaine de début mi-Juillet à Août.</p> <br>
-                    <p>Travaux réalisés : j'ai participé à plusieurs tâches tel que le déplacement des affaires et des meubles de l'ancien appartement au nouveau durant environ 5 jours, puis j'ai assisté avec la peinture des murs, la mise en place des papiers peints, l'assemblement des nouveaux meubles sur une durée d'environ un mois.</p><br>
-                    <p>Quels sont les résultats  ? Bien que ceci ait été court, j'ai appris à réaliser des tâches variées et sur une durée conséquente selon des attentes spécifiques, ceci m'a donné l'occasion d'apprendre à travailler aussi bien en équipe qu'en autonomie.</p>
+                <div class="project-card" onclick="openProjectModal('modal-renovation')">
+                    <div class="card-image-wrapper">
+                        <div style="width: 100%; height: 100%; background: #e8f0f0; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-paint-roller" style="font-size: 3rem; color: #4a6c6a;"></i>
+                        </div>
+                        <div class="card-icon-overlay"><i class="fas fa-tools"></i></div>
+                    </div>
+                    <div class="card-project-body">
+                        <h3>Rénovation d'appartement</h3>
+                        <p>Préparation d'un aménagement complet (Juillet 2024 - Août 2024).</p>
+                        <div class="card-tags"><span class="tag">Rénovation</span><span class="tag">Autonomie</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-construction" class="project-modal-overlay">
+                <div class="project-modal-content">
+                    <span class="close-modal" onclick="closeProjectModal('modal-construction')">&times;</span>
+                    <h2>Travaux de construction d'une maison</h2>
+                    <p><strong>Période :</strong> 2023 - Présent</p>
+                    <p><strong>Objectif :</strong> Réaliser la construction et l'isolation des différentes salles d'une maison.</p>
+                    <br>
+                    <p><strong>Situation :</strong> Je voyage en majorité les étés dans mon pays d'origine, là où j'aide ma famille à bâtir notre maison, principalement en réalisant des travaux d'isolation et de bâtissage de structures. Le temps passé par semaine est d'environ 4 à 5h par jour toute la semaine de Début/Mi-Juillet à fin Août.</p>
+                    <br>
+                    <p><strong>Travaux réalisés :</strong> Au fil des années, j'ai participé à plusieurs tâches telles que l'isolement des murs et de plafond avec de la laine de verre et installation de placo, le transport d'objets, de matériaux et d'outils à longueur de journée d'un point A à un point B. Il s'agit de travaux physique et manuels que je réalise avec mon père même s'il arrive que ce soit avec d'autres personnes qui sont bien plus expérimentées que moi.</p>
+                    
+                    <img src="img/isola.png" alt="Schéma d'isolation" class="modal-project-img">
+                    <p>Voici une représentation de l'isolement en question, nous y retrouvons une ossature qui dans notre cas était en bois, servant à retenir le matériau isolant qui est la laine de verre, et qui s'installe entre le mur et la plaque de plâtre qui est placée par dessus, comme le montre le schéma.</p>
+                    <br>
+                    <p><strong>Quels sont les résultats ?</strong> J'ai appris au fil du temps à suivre des instructions plus ou moins complexes, à prendre l'initiative sur certaines tâches afin que les travaux soient réalisés efficacement, mais ceci m'a surtout donné l'occasion d'assister, d'observer et d'apprendre à travailler en équipe, à être délicat et patient avec des matériaux fragiles.</p>
+                </div>
+            </div>
+
+            <div id="modal-renovation" class="project-modal-overlay">
+                <div class="project-modal-content">
+                    <span class="close-modal" onclick="closeProjectModal('modal-renovation')">&times;</span>
+                    <h2>Rénovation d'appartement</h2>
+                    <p><strong>Période :</strong> Juillet 2024 - Août 2024</p>
+                    <p><strong>Objectif :</strong> Préparer un appartement pour un aménagement.</p>
+                    <br>
+                    <p><strong>Situation :</strong> Durant l'été 2024, lors d'un déménagement, j'ai dû assister ma famille dans la rénovation d'un appartement, passant environ 6h par jour (de midi à 17/18h) toute la semaine de début mi-Juillet à Août.</p>
+                    <br>
+                    <p><strong>Travaux réalisés :</strong> J'ai participé à plusieurs tâches telles que le déplacement des affaires et des meubles de l'ancien appartement au nouveau durant environ 5 jours, puis j'ai assisté avec la peinture des murs, la mise en place des papiers peints, l'assemblement des nouveaux meubles sur une durée d'environ un mois.</p>
+                    <br>
+                    <p><strong>Quels sont les résultats ?</strong> Bien que ceci ait été court, j'ai appris à réaliser des tâches variées et sur une durée conséquente selon des attentes spécifiques, ceci m'a donné l'occasion d'apprendre à travailler aussi bien en équipe qu'en autonomie.</p>
                 </div>
             </div>
         </section>
 
         <section id="projets" class="section-content">
             <h1 class="section-title-text"><i class="fas fa-code-branch"></i> PROJETS</h1>
-            <div class="card-container">
             
-             <div class="card project-item">
-                     
-                    <h3>BUT - traiter des données en Python en cours</h3>
-                    <p>Objectif : Afficher, pour le  BUT1, la répartition (en volume horaire) des CM, TD, TP de chaque matière à partir de l'emploi du temps avec l'aide de Python.</p> <br>
-                    <p>Contexte : Il s'agit d'un projet individuel en cours, A partir de l'emploi du temps que nous devons exporter et formater, je dois utiliser Python (précisément les outils Numpy et Pandas) afin de traiter et répartir ces données selons les matières et les types de cours :  Cours Magistraux (CM), Travaux Dirigés (TD) et Travaux Pratiques (TP).</p>
-                    <p>Travaux réalisés : J'ai pour le moment un bout de code qui me permet de lire les données et de les afficher</p>
-                    
-                    <!-- EN DEHORS de la box -->
-                    <div id="lightbox" onclick="closeLightbox()">
-                        <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Agrandissement de l'image">
+            <div class="projects-grid">
+                
+                <div class="project-card" onclick="openProjectModal('modal-python')">
+                    <div class="card-image-wrapper">
+                        <img src="img/py.jpg" alt="Aperçu Code Python" class="card-project-img">
+                        <div class="card-icon-overlay"><i class="fab fa-python"></i></div>
                     </div>
-
-                    <p>Cette image montre ce que j'ai pour le moment, il ne m'a suffi que d'extraire l'emploi du temps, le convertir en format csv et de l'afficher, la prochaine étape est de séparer chaque matières, ensuite chaque type de cours (CM,TD,TP) et de compter les heures.</p> <br>
-                    <p>Résultats : Toujours en cours</p> <br>
-                    <p>Qu'ai-je appris ? J'ai appris à utiliser python afin de traiter des données, à utiliser des bibliothèques telles que Numpy et Pandas, mais aussi à analyser un problème et le diviser en plusieurs sous-problèmes afin de le résoudre plus facilement.</p>
-
+                    <div class="card-project-body">
+                        <h3>BUT - Traitement de données Python</h3>
+                        <p>Automatisation de l'analyse d'emploi du temps via l'exportation et le formatage de données massives avec Numpy et Pandas.</p>
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Analyse</span>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="project-card" onclick="openProjectModal('modal-asite')">
+                    <div class="card-image-wrapper">
+                        <img src="img/cyb.jpg" alt="Maquette Arduino" class="card-project-img">
+                        <div class="card-icon-overlay"><i class="fa-solid fa-network-wired"></i></div>
+                    </div>
+                    <div class="card-project-body">
+                        <h3><i class="fas fa-rocket"></i> Conception d'un site d'apprentissage</h3>
+                        <p>Création d'un système intelligent et économe en énergie avec Arduino, capteurs de luminosité et détecteurs de mouvement.</p>
+                        <div class="card-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">html/CSS</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="card project-item">
-
-                    
-                    <h3><i class="fas fa-rocket"></i> Création d'un système d'éclairage autonome pour parking.</h3>
-                    <p>Objectif : créer un système d'éclairage autonome et intelligent pour un parking, capable de s'adapter à la luminosité ambiante et aux mouvements.</p>
-                    <p>Contexte : Il s'agissait d'un projet en Première STI2D, réalisé à quatre sur un délai d'un mois et demi</p>
-                    <p>Technologies utilisées : Arduino, capteurs de luminosité, détecteurs de mouvement, leds.</p> <br>
-
-                    <p>Travail réalisé : Mes tâches à moi étaient de m'occuper de créer le circuit selon la demande suivante : les leds devaient s'allumer seulement sous un seuil de luminosité et s'éteindre lorsqu'il repassait au dessus, et SEULEMENT si le détecteur de mouvement avait détecté du mouvement soit d'une voiture, soit d'un passant. <br>
-                        J'ai d'abord réalisé les circuits virtuellement sur Tinkercad, apprenant petit à petit à brancher et utiliser chacun des composants du système séparément, il m'a ensuite fallu apprendre à les coder de la façon que je voulais, ce qui était la tâche la plus longue. Une fois que mes différentes parties fonctionnaient séparement, il m'a fallu tout assembler en un seul circuit fonctionnel, adaptant les branchements et le code.</p> <br>
-                    <img src="img/ard.png" alt="Capture d'écran Projet" class="project-img"> <br>
-                        
-                        <p>Voici une capture d'écran de toutes les différentes étapes, des premiers sytèmes à l'assemblement final.</p>
-
-                    <p>Résultats : Le système a fonctionné comme prévu, à la fin du projet, il a pu être monté en maquette et essayé. Les leds s'allumaient bien lorsque les deux conditions étaient remplies, restaient allumées un moment avant de s'éteindre au bout de 10secondes (temps réduit afin d'être visualisable)</p> <br>
-                    
-                    <p>Qu'ais-je appris ? Il s'agissait de mon premier projet avec Arduino, j'ai appris à utiliser toutes les ressources disponibles (documentation, tutoriels, montages existants) et à innover en fonction de ce que je voulais, j'ai essayé de pousser ma partie au plus loin en ajoutant de nouvelles idées. J'ai appris à faire des circuits plus complexes, à rester patient malgré les longues heures passées à travailler sur un circuit ne fonctionnant pas, et à être rigoureux et attentif à ce que je faisais afin de ne rien oublier. D'un plan plus général, j'ai appris à travailler selon une échéance et à gérer un projet en fonction de celle-ci via l'utilisation de mind map afin de répartir les idées clairement, et d'un diagramme de Gantt afin de répartir les tâches sur la durée.</p>
+                <div class="project-card" onclick="openProjectModal('modal-reseau')">
+                    <div class="card-image-wrapper">
+                        <img src="img/hold.jpg" alt="Maquette Arduino" class="card-project-img">
+                        <div class="card-icon-overlay"><i class="fa-solid fa-circle-user"></i></div>
+                    </div>
+                    <div class="card-project-body">
+                        <h3><i class="fas fa-rocket"></i> Projet intégratif </h3>
+                        <p>Projet de fin de première année consistant à concevoir un réseau d'entreprise.</p>
+                        <div class="card-tags">
+                            <span class="tag">Réseaux</span>
+                            <span class="tag">Installation</span>
+                            <span class="tag">Configuration</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div id="modal-python" class="project-modal-overlay">
+                <div class="project-modal-content">
+                    <span class="close-modal" onclick="closeProjectModal('modal-python')">&times;</span>
+                    <h2>BUT - traiter des données en Python en cours</h2>
+                    
+                    <p><strong>Objectif :</strong> Afficher, pour le BUT1, la répartition (en volume horaire) des CM, TD, TP de chaque matière à partir de l'emploi du temps avec l'aide de Python.</p>
+                    <p><strong>Contexte :</strong> Il s'agit d'un projet individuel en cours. À partir de l'emploi du temps que nous devons exporter et formater, je dois utiliser Python (précisément les outils Numpy et Pandas) afin de traiter et répartir ces données selon les matières et les types de cours : Cours Magistraux (CM), Travaux Dirigés (TD) et Travaux Pratiques (TP).</p>
+                    
+                    <h3>Travaux réalisés</h3>
+                    <p>J'ai pour le moment un bout de code qui me permet de lire les données et de les afficher. La prochaine étape est de séparer chaque matière, ensuite chaque type de cours (CM, TD, TP) et de compter les heures.</p>
+                    <p><strong>Résultats :</strong> Toujours en cours</p>
+                    
+                    <h3>Qu'ai-je appris ?</h3>
+                    <p>J'ai appris à utiliser Python afin de traiter des données, à utiliser des bibliothèques telles que Numpy et Pandas, mais aussi à analyser un problème et le diviser en plusieurs sous-problèmes afin de le résoudre plus facilement.</p>
+
+                    <img src="img/pih15.png" alt="Aperçu Code Python" class="modal-project-img">
+                    <p>Et voici le résultat final.</p>
+                </div>
+            </div>
+
+            <div id="modal-reseau" class="project-modal-overlay">
+                <div class="project-modal-content">
+                    <span class="close-modal" onclick="closeProjectModal('modal-reseau')">&times;</span>
+                    <h2><i class="fas fa-rocket"></i> Projet Intégratif - Conception d'un réseau d'entreprise </h2>
+
+                    <p><strong>Objectif :</strong> Mettre en place un réseau informatique fiable et sécurisé pour une entreprise, permettant une communication fluide entre les différents postes de travail et un accès extérieur.</p>
+                    <p><strong>Contexte :</strong> L’objectif de ce projet était de concevoir et d'installer une infrastructure réseau complète, composée à la fois d’équipements d’infrastructure (switchs, routeurs, points d’accès Wi-Fi, pare-feu) et d’équipements clients (ordinateurs, téléphones IP). Un serveur central devait également être déployé pour héberger l’ensemble des services nécessaires au bon fonctionnement du réseau, tels que DHCP, DNS, Web, FTP, supervision et Active Directory.</p>
+                    <p><strong>Technologies :</strong> Postes, Windows Serveurs, Linux, configuration d'éléments réseau.</p>
+
+                    <h3>Travail réalisé</h3>
+                    <p>Mes tâches ont été d'installer les systèmes d'exploitations et de configurer les postes afin qu'ils se connectent au réseau. [À compléter]</p>
+                    
+                    <h3>Résultats & Apprentissages</h3>
+                    <p>Projet toujours en cours.</p>
+                </div>
+            </div>
+
+            <div id="modal-asite" class="project-modal-overlay">
+                <div class="project-modal-content">
+                    <span class="close-modal" onclick="closeProjectModal('modal-asite')">&times;</span>
+                    <h2><i class="fas fa-rocket"></i> Création d'un site web dynamique d'apprentissage</h2>
+
+                    <p><strong>Objectif :</strong> Créer un site web dynamique d'apprentissage pour aider les étudiants à mieux comprendre les concepts clés de leur programme.</p>
+                    <p><strong>Contexte :</strong> Il s'agissait d'un projet en Première STI2D, réalisé à quatre sur un délai d'un mois et demi.</p>
+                    <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP, MySQL.</p>
+
+                    <h3>Travail réalisé</h3>
+                    <p>J'ai conçu l'architecture du site en définissant les différentes pages et fonctionnalités nécessaires. J'ai développé l'interface utilisateur en utilisant HTML et CSS, en veillant à ce qu'elle soit à la fois attrayante et fonctionnelle.</p>
+                    <p>J'ai également mis en place une base de données MySQL pour stocker les informations des utilisateurs et des cours, et j'ai utilisé PHP pour gérer les interactions entre le front-end et le back-end.</p>
+
+                    <img src="img/hold.jpg" alt="dashboard" class="modal-project-img">
+                    <p class="img-caption">Image de l'un des dashboards.</p>
+
+                    <h3>Résultats & Apprentissages</h3>
+                    <p>Le site a été développé avec succès et a permis aux étudiants d'accéder à des ressources d'apprentissage de manière interactive.</p>
+                    <p>J'ai appris à utiliser toutes les ressources disponibles (documentation, tutoriels). J'ai appris à travailler selon une échéance et à utiliser un système client-serveur afin de créer un site opérationnel.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- ================= DIVERS ================= -->
-
-        <section class="divers">
-            <section id="divers" class="section-content"></section>
-  <h2>DIVERS</h2>
-
-  <div class="divers-container">
-    <div class="bubble">
-      <h3>Lecture</h3>
-      <p>
-        J'aime lire sur une variété de sujets, allant de la fiction à la non-fiction.
-        La lecture m'aide à élargir mes horizons et à stimuler mon imagination.
-      </p>
-    </div>
-
-    <div class="bubble">
-      <h3>Ecriture</h3>
-      <p>
-        Avec la lecture, j'aime aussi rédiger de temps en temps, créer des histoires courtes, des personnages, des univers.
-        Cela me permet d'exprimer ma créativité et de mettre mon imagination en action.
-      </p>
-    </div>
-
-    <div class="bubble">
-      <h3>Informatique</h3>
-      <p>
-        Je me tiens à jour sur l’informatique et le web.
-        Ces domaines évoluent rapidement avec une multitude d'innovations et nécessitent de garder constamment un oeil dessus.
-      </p>
-    </div>
-
-    <div class="bubble">
-      <h3>Musique</h3>
-      <p>
-        J'aime écouter de la musique, bien que je n'ai pas de style particulier, j'affectionne de tout.
-        Elle m'accompagne dans mes moments de détente et de concentration.
-      </p>
-      <!-- <a href="images/buche.jpg" target="_blank">Voir photo</a> -->
-
-    </div>
-  </div>
-</section>
-
-
-
-
-        <!-- ================= CV ================= -->
-
-
+        <section id="divers" class="section-content divers">
+            <h2>DIVERS</h2>
+            <div class="divers-container">
+                <div class="bubble">
+                    <h3>Écriture</h3>
+                    <p>Avec la lecture, j'aime aussi rédiger de temps en temps, créer des histoires courtes, des personnages, des univers. Cela me permet d'exprimer ma créativité et je fais cela depuis mes 12 ans. Je ne tiens cependant pas à partager.</p>
+                </div>
+                <div class="bubble">
+                    <h3>Informatique</h3>
+                    <p>Je me tiens à jour sur l’informatique et le web. Ces domaines évoluent rapidement et nécessitent de garder constamment un oeil dessus.</p>
+                </div>
+                <div class="bubble">
+                    <h3>Musique</h3>
+                    <p>J'aime écouter de la musique, elle m'accompagne dans mes moments de détente. 
+                        Mes goûts s'étendent sur une grande variété de genres : rap, rock, pop, classique, OST (Original Soundtrack), j'aime découvrir de nouvelles musiques et artistes.
+                    </p>
+                </div>
+                <div class="bubble">
+                    <h3>Films & Séries</h3>
+                    <p>J'aime regarder des films et des séries, bien que je n'en regarde pas si souvent que ça, j'apprécie prendre un moment de temps en temps pour le faire.
+                        J'apprécie tout type de genre tant que l'histoire est bien construite et que les personnages sont intéressants. J'apprécie drames, documentaires, Policier, science-fiction et animé.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <section id="cv" class="section-content">
             <h1 class="section-title-text"><i class="fas fa-file-pdf"></i> C.V</h1>
             <p style="text-align: center;">Téléchargez mon Curriculum Vitae ici.</p>
-
             <div class="cv">
-                <img src="img/CV.png" alt="CV" width="200" height="300">
+                <img src="img/CV.png" alt="CV" width="200">
             </div>
             <div style="text-align: center;">
-                <a href="img/CV.pdf" class="cta-button" download>Télécharger mon C.V (PDF)</a>
+                <a href="img/CV.pdf" class="cta-button" download rel="noopener noreferrer">Télécharger mon C.V (PDF)</a>
             </div>
-
         </section>
-
-        <!-- ================= CONTACT ================= -->
 
         <section id="contact" class="section-content contact-form-section">
             <h1 class="section-title-text"><i class="fas fa-paper-plane"></i> CONTACT</h1>
-
             <div class="contact-section">
-
-         <div class="contact-banner">
-              Pour tout renseignement complémentaire, voici mes contacts : 
+                <div class="contact-banner">Pour tout renseignement complémentaire, voici mes contacts :</div>
+                <div class="contact-row">
+                    <div class="contact-left"><i class="fas fa-envelope"></i> <span>E-mail</span></div>
+                    <div class="contact-right">malik.bassaiev@etu.uca.fr</div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-left"><i class="fas fa-globe"></i> <span>Réseaux sociaux</span></div>
+                    <div class="contact-right social-icons">
+                        <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="contact-row">
-              <div class="contact-left">
-                  <i class="fas fa-envelope"></i>
-                  <span>E-mail</span>
-             </div>
-             <div class="contact-right">
-                 malik.bassaiev@etu.uca.fr
-             </div>
-         </div>
-
-            <div class="contact-row">
-                <div class="contact-left">
-                    <i class="fas fa-globe"></i>
-                    <span>Réseaux sociaux</span>
-             </div>
-                <div class="contact-right social-icons">
-                    <i class="fab fa-linkedin"></i>
-                 <i class="fab fa-github"></i>
-             </div>
-            </div>
-
-         </div>
         </section>
-
-
     </main>
-     <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p style="text-align: center; padding: 20px; color: #aaa; font-size: 14px;">Conçu avec soin | &copy; 2025 BASSAIEV Malik.</p>
+        <p style="text-align: center; padding: 20px; color: #aaa; font-size: 14px;">Conçu avec soin | &copy; 2026 BASSAIEV Malik.</p>
     </footer>
 
- <!-- ================= SCRIPTS ================= -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
 
-
-    <script>
-        function showSkills(skillType) {
-            // Masquer tout le contenu
-            let contents = document.getElementsByClassName('tab-content');
-            for (let i = 0; i < contents.length; i++) {
-                contents[i].classList.remove('active');
-            }
-
-            // Désactiver tous les boutons
-            let buttons = document.getElementsByClassName('tab-button');
-            for (let i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove('active');
-            }
-
-            // Afficher le contenu sélectionné
-            document.getElementById(skillType).classList.add('active');
-
-            // Activer le bouton correspondant
-            event.currentTarget.classList.add('active');
-        }
-    </script>
-
-
-    <script>
-        function openPanel(formation) {
-        const panel = document.getElementById("formationPanel");
-        const title = document.getElementById("panel-title");
-        const content = document.getElementById("panel-content");
-
-    if (formation === "lafayette") {
-        title.innerText = "Lycée Polyvalent La Fayette";
-        content.innerHTML = `
-            <p><strong>Diplôme :</strong> Bac STI2D – SIN</p>
-            <p><strong>Année :</strong> 2021 - 2025</p>
-            <p><strong>Obtention :</strong> Oui – Mention Assez Bien</p>
-
-            <h3>Objectif de la formation</h3>
-            <p>
-                Le parcours STI2D (Sciences et Technologies de l’Industrie et du Développement Durable) est accessible dès la première. En terminale j’ai dû choisir entre plusieurs spécialités, j’ai choisi : SIN (Système d’Information Numérique). Ce parcours “permet d’acquérir des compétences technologiques étendues, transversales à tous les domaines industriels, ainsi que des compétences approfondies dans un champ de spécialité.
-            </p>
-
-            <h3>Pourquoi la STI2D ?</h3>
-            <p>
-                J'ai choisi la STI2D car elle offre une approche plus pratique que théorique. Je visais le parcours SIN depuis la seconde ayant un grand intérêt pour l'informatique et surtout l'électronique.
-            </p>
-
-            <h3>Et maintenant ?</h3>
-            <p>
-                J'ai obtenu mon baccalauréat mention assez bien avec un lot de connaissances en électronique (Arduino), programmation, en réseaux, en traitement du signal. Mais aussi des connaissances sur le développement durable.
-            </p>
-        `;
-    }
-
-    if (formation === "uca") {
-        title.innerText = "IUT Clermont Auvergne";
-        content.innerHTML = `
-            <p><strong>Diplôme :</strong> BUT Réseaux et Télécommunications</p>
-            <p><strong>Année :</strong> 2025 - Présent</p>
-            <p><strong>Statut :</strong> 1ère année</p>
-
-            <h3>Objectif de la formation</h3>
-            <p>
-                Le BUT Réseaux et Télécommunications est une formation en 3 ans visant à former des techniciens dans le domaines des réseaux informatiques, des télécommunications et de la cybersécurité à partir de la deuxième année.
-            </p>
-
-            <h3>Pourquoi ce BUT ?</h3>
-            <p>
-                J'ai choisi ce BUT et cet IUT afin de poursuivre ma formation et développer des compétences techniques dans le domaine de la cybersécurité plus particulièrement. Ce BUT correspond à mon projet d'avenir : exercer un métier dans la <strong>blue team / red team</strong>.
-            </p>
-
-            <h3>Et maintenant ?</h3>
-            <p>
-                L'année est toujours en cours, mais je me bats afin de la réussir.
-            </p>
-        `;
-    }
-
-    panel.classList.add("open");
-    }
-
-    function closePanel() {
-    document.getElementById("formationPanel").classList.remove("open");
-    }
-    </script>
-
-    <script>
-  function openLightbox(src) {
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').style.display = 'flex';
-  }
-
-  function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-  }
-</script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
