@@ -32,7 +32,7 @@
     <div class="hero-section">
         <img src="img/moi.png" alt="Photo de profil" class="profile-img"> 
         <h1>Malik BASSAIEV</h1>
-        <h2><i class="fas fa-code"></i> Etudiant de 1ère année BUT Réseaux et Télécommunications</h2>
+        <h2><i class="fas fa-code"></i> Etudiant de 2ème année BUT Réseaux et Télécommunications Option Cybersécurité</h2>
     </div>
 
     <main>
@@ -41,8 +41,8 @@
         <section id="a-propos" class="section-content">
             <h1 class="section-title-text"><i class="fas fa-user-circle"></i> À PROPOS DE MOI</h1>
             <p>Je suis <strong>Malik BASSAIEV</strong> <br>
-            Etudiant de 1ère année de BUT Réseaux et Télécommunications.</p>
-            <p>J'ai 19 ans, je viens de Clermont-Ferrand dans le Puy-de-Dôme (63).</p> <br>
+            Etudiant de 2ème année de BUT Réseaux et Télécommunications Option CYbersécurité.</p>
+            <p>J'ai 20 ans, je viens de Clermont-Ferrand dans le Puy-de-Dôme (63).</p> <br>
 
             <p>J'étudie à l'IUT d'Aubière et y apprend les bases des réseaux et des télécommunications au cours de cette première année via des travaux dirigés (TD) et des travaux pratiques (TP) afin d'acquérir les bases nécessaires et pouvoir les appliquer. <br>
             Patient, autonome, curieux et capable de m'adapter, je recherche un stage de 3 mois, d'avril 2027 à Juin 2027 dans le but d'acquérir une première expérience dans le milieu professionnel tout en élargissant mes connaissances.</p>
@@ -95,6 +95,8 @@
             <div class="skills-container-layout">
                 <div class="skills-sidebar" id="sidebar-techniques">
                     <button class="side-btn active" onclick="showSubCategory('res')">Réseaux</button>
+                    <button class="side-btn" onclick="showSubCategory('sys')">Systèmes</button>
+                    <button class="side-btn" onclick="showSubCategory('cyber')">Cybersécurité</button>
                     <button class="side-btn" onclick="showSubCategory('prog')">Programmation</button>
                     <button class="side-btn" onclick="showSubCategory('telecom')">Télécommunications</button>
                     <button class="side-btn" onclick="showSubCategory('tel')">Téléphonie</button>
@@ -109,19 +111,26 @@
                             <div class="acc-item">
                                 <div class="acc-header" onclick="toggleAcc(this)">Modélisation & Analyse <i class="fas fa-chevron-down"></i></div>
                                 <div class="acc-body">
-                                    <p>Je suis capable de modéliser un ou plusieurs réseaux sur <strong>Cisco Packet Tracer</strong>. J'utilise également des outils comme <strong>Nmap</strong> pour l'analyse de ports et la découverte de services sur un réseau local.</p>
+                                    <p>Je suis capable de modéliser un ou plusieurs réseaux sur <strong>Cisco Packet Tracer</strong> et <strong>GNS3</strong>. J'utilise également des outils comme <strong>Nmap</strong> et <strong>Wireshark</strong> pour l'analyse de ports et la découverte de services sur un réseau local.</p>
                                 </div>
                             </div>
                             <div class="acc-item">
                                 <div class="acc-header" onclick="toggleAcc(this)">Virtualisation <i class="fas fa-chevron-down"></i></div>
                                 <div class="acc-body">
-                                    <p>Je suis capable de créer des machines virtuelles et de configurer des réseaux virtuels à l'aide d'outils comme <strong>VMware</strong>, <strong>VirtualBox</strong> et <strong>Docker</strong>.</p>
+                                    <p>Je suis capable de de mettre en place des machines virtuelles et de configurer des services virtuels à l'aide d'outils comme <strong>VMware</strong>, <strong>VirtualBox</strong> et <strong>Docker</strong>.</p>
                                 </div>
                             </div>
                             <div class="acc-item">
                                 <div class="acc-header" onclick="toggleAcc(this)">Installation d'équipement réseau <i class="fas fa-chevron-down"></i></div>
                                 <div class="acc-body">
                                     <p>Je suis capable d'installer et de configurer des équipements réseau tels que des routeurs, des commutateurs et des points d'accès. J'ai de l'expérience avec des marques comme <strong>Cisco</strong> et <strong>TP-Link</strong>.</p>
+                                </div>
+                            </div>
+
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Routage et commutation <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Configuration de <strong>VLAN</strong>, de liaisons trunk et du routage inter-VLAN. Étude du routage statique et dynamique et des mécanismes NAT/PAT, je suis aussi capable de configurer OSPF et MPLS.</p>
                                 </div>
                             </div>
 
@@ -134,6 +143,66 @@
                         </div>
                     </div> 
                     
+                    <div id="sys" class="sub-cat-content" style="display:none;">
+                        <h3>Systèmes et virtualisation</h3>
+                        <div class="accordion">
+
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Windows et Linux <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Utilisation et configuration de systèmes <strong>Windows</strong> et <strong>Linux</strong>, gestion des utilisateurs et utilisation de la ligne de commande.</p>
+                                </div>
+                            </div>
+
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Administration Système<i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable d'installer et de configurer un environnement Windows Server afin d'assurer l'administration centralisée d'un réseau d'entreprise. Je sais mettre en place un domaine Active Directory (AD), gérer les utilisateurs, les groupes et les unités organisationnelles (OU), ainsi que configurer des stratégies de groupe (GPO). Je suis également capable de déployer et d'administrer les services DNS et DHCP, d'intégrer des postes clients à un domaine et de gérer les droits d'accès aux ressources partagées.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Services réseau <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Configuration de services <strong>DNS</strong> et <strong>DHCP</strong> en environnement pédagogique.</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+
+                     <div id="cyber" class="sub-cat-content" style="display:none;">
+                        <h3>Cybersécurité</h3>
+                        <div class="accordion">
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Pare-feu et filtrage <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Configuration de pare-feu <strong>Stormshield</strong> en environnement pédagogique et étude des règles de filtrage et des ACL.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Sécurisation des infrastructures <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Étude de la segmentation réseau, des <strong>DMZ</strong>, des ACL et des VPN.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">Tests d’intrusion et vulnérabilités <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Découverte des méthodes de tests d’intrusion autorisé avec <strong>Nmap</strong>, <strong>Burp Suite</strong> et <strong>Metasploit</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-header" onclick="toggleAcc(this)">DNSSEC <i class="fas fa-chevron-down"></i></div>
+                                <div class="acc-body">
+                                    <p>Je suis capable de configurer et de sécuriser un serveur DNS sous Linux à l'aide du protocole DNSSEC (Domain Name System Security Extensions). Je sais générer des clés cryptographiques, signer des zones DNS et vérifier l'authenticité ainsi que l'intégrité des réponses DNS. Cette sécurisation permet notamment de se protéger contre les attaques de type DNS Spoofing et empoisonnement du cache DNS.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div id="prog" class="sub-cat-content" style="display:none;">
                         <h3>Programmation</h3>
                         <div class="accordion">
@@ -230,12 +299,17 @@
                             <div class="skill-card">
                                 <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
                                 <h3>Anglais</h3>
-                                <p>Niveau B1+. Je peux aisément lire et parler/écrire en anglais afin de tenir une conversation avec un interlocuteur anglophone.</p>
+                                <p>Niveau C1. Je peux aisément lire et parler/écrire en anglais afin de tenir une conversation avec un interlocuteur anglophone.</p>
                             </div>
                             <div class="skill-card">
                                 <div class="card-icon"><i class="fas fa-language"></i></div>
                                 <h3>Allemand</h3>
-                                <p>Niveau B. Je suis capable de comprendre et de communiquer dans des situations simples en allemand.</p>
+                                <p>Niveau B1. Je suis capable de comprendre et de communiquer dans des situations simples en allemand.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon"><i class="fas fa-language"></i></div>
+                                <h3>Tchétchène</h3>
+                                <p>Langue maternelle.</p>
                             </div>
                         </div>
                     </div> 
@@ -336,7 +410,7 @@
         </section>
 
         <section id="projets" class="section-content">
-            <h1 class="section-title-text"><i class="fas fa-code-branch"></i> PROJETS</h1>
+            <h1 class="section-title-text"><i class="fas fa-code-branch"></i> PROJETS (EN COURS DE MODIFICATION)</h1>
             
             <div class="projects-grid">
                 
@@ -497,8 +571,8 @@
                 <div class="contact-row">
                     <div class="contact-left"><i class="fas fa-globe"></i> <span>Réseaux sociaux</span></div>
                     <div class="contact-right social-icons">
-                        <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/malik-bassaiev-51707344a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                       <!-- <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a> -->
                     </div>
                 </div>
             </div>
